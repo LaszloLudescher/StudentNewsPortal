@@ -251,7 +251,7 @@ app.get('/api/news/:id', (req, res) => {
 // SERVER STARTUP
 // ==========================================
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`\n🚀 In-Memory Backend running!`);
+    console.log(`\n In-Memory Backend running!`);
     console.log(`Local Access: http://localhost:${PORT}`);
     console.log(`LAN Access:   use ${PORT}port on phone!`);
     console.log(`\nData has been seeded with ${newsData.length} translated articles.`);
