@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model NewsArticle {
+  id           Int    @id @default(autoincrement())
+  image        String
+  translations String 
+}
+
+// Add the new User model
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String // Note: In a real app, use bcrypt to hash this!
+  role     String @default("USER") // ADMIN, EDITOR, JOURNALIST, USER
+}
