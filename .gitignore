@@ -1,0 +1,39 @@
+# =========================
+# Dependencies
+# =========================
+# This ignores both the frontend and backend node_modules as long as it has the trailing slash
+node_modules/
+.npm/
+
+# =========================
+# Environment Variables
+# =========================
+# Never push these to GitHub!
+.env
+.env.local
+.env.*
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
+out/
+
+# =========================
+# Logs
+# =========================
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# =========================
+# Operating System & Editors
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.sln

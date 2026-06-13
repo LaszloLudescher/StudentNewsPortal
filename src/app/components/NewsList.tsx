@@ -2,8 +2,8 @@ import type { Lang, NewsItem } from "../App";
 
 interface NewsListProps {
   news: NewsItem[];
-  selectedId: number | null;
-  onSelectNews: (id: number) => void;
+  selectedId: string | number | null;              
+  onSelectNews: (id: string | number) => void;
   lang: Lang;
 }
 
